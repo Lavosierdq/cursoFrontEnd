@@ -1,3 +1,4 @@
+Curoso feito pelo colega Lavosier e forkado para realização de uma aula de GitHub
 # Curso HTML e CSS
 <p align="left">
  <a href="https://www.cursoemvideo.com/curso/html5/" target="_blank" rel="noreferrer">
