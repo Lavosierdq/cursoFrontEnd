@@ -1,20 +1,27 @@
 @charset "utf-8"
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@0;1&display=swap');
+font-face{
+  font-family:'FonteLogo'
+  src:url("../fonts/bubblegum-sans-regular.otf")
+}
 body{
   background-color: #dddddd;
   color: rgba(0,0,0,1);
 }
 
 div#interface{
-  width:900px;
+  width:1000px;
   background-color: #ffffff;
   margin: -20px auto 0px 10px;
   /* box shadow  com rgba  utilizando margens  e alfa(translucido)*/
   box-shadow: 0px 0px 10px rgba(0,0,0,0.5)
-  padding: 10px;
+  padding: 20px;
 }
 p{
   text-align: justify;
-  text-indent: 100px;
+  text-indent: 50px;
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
 }
 
 header#cabecalho img#icone{
@@ -29,7 +36,7 @@ header#cabecalho{
   background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
 }
 header#cabecalho h1{
-  font-family:Arial,sans-serif;
+  font-family:'FonteLogo',sans-serif;
   font-size:30pt;
   color:#606060; 
   text-shadow:1px 1px 1px rgba(0,0,0,0.6);
@@ -37,7 +44,7 @@ header#cabecalho h1{
   margin-bottom: 0px;
 }
 header#cabecalho h2{
-  font-family:Arial,sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   color:#888888;
   font-size:15pt; 
   padding: 0;
@@ -110,4 +117,27 @@ nav#menu a{
 nav#menu a:hover{
   color: #ffffff;
   text-decoration: underline;
+}
+
+/* configurando  corpo e lateral da pagina */
+section#corpo{
+  display:block;
+  width:500px;
+  float: left;
+  border-right: 1px solid #606060;
+  padding-right: 26px;
+
+}
+aside#lateral{
+  display:block;
+  width:450px;
+  float:right;
+}
+
+footer#rodape{
+  clear:both;
+  border-top:1px solid #606060;
+}
+footer#rodape p{
+  text-align: center;
 }
