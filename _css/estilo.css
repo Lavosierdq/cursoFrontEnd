@@ -8,6 +8,7 @@ body{
   background-color: #dddddd;
   color: rgba(0,0,0,1);
 }
+
 table#tabela{
   border:1px solic #606060;
   border-spacing:0px;
@@ -18,6 +19,33 @@ table#tabela td{
   border: 1px solid  #606060;
   padding: 10px;
 }
+
+
+table#tabela td.ce{
+  color: #ffffff;
+  background-color:#606060;
+  vertical-align: top;
+  font-weight: bold;
+}
+table#tabela td.cd{
+  background-color: #cecece;
+}
+
+table#tabela caption{
+  color:#888888;
+  font-size: 13pt;
+  font-weight:bolder;
+}
+
+table#tabela caption span{
+  display:block;
+  float:rigth;
+  color:#000000;
+  font-size: 8pt;
+
+}
+
+ta
 div#interface{
   width:1000px;
   background-color: #ffffff;
