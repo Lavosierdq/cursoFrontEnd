@@ -65,20 +65,22 @@
           </header>
           <form action=""> 
             <fieldset id="usuario"> <legend>Identificação com o Usuário</legend>
-            Nome:
-            Senha:
-            E-Mail:
-            Sexo:
-              -Masculino
-              -Feminino  
-            Data de Nascimento:
+              <p> <label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+              <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8"/></p>
+              <p><label for="cEmail">E-Mail:</label><input type="email" name="tEmail" id="cEmail" size="20" maxlength="40"></p>
+
+              <fieldset id="Sexo"> <legend>Sexo</legend>
+                <input type="radio" name="tSexo" id="cMasc"> <label for="cMasc">Masculino</label> 
+                <input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label>
+              </fieldset>
+              <p><label for="cNasc">Data de Nascimento <input type="date" name="cNasc" id="cNasc"></label></p>
             </fieldset>
 
             <fieldset id="endereco"> <legend>Endereço de Email</legend>
-              Lougradouro:
-              Número:
-              Estado:
-              Cidade:
+              <p><label for="tLogra">Lougradouro:</label><input type="text" name="cLogra" id="tLogra" size="13" maxlength="80" placeholder="Rua,Ave,Trav ..."></p>
+             <p><label for="tNumero">Número:</label> <input type="number" name="cNumero" id="tNumero" min="0" max="99999" placeholder="Número"></p> 
+             <p><label for="tEstado">Estado:</label> <input type="text" name="cEstado" id="tEstado" size="20" max="20" placeholder="Estado"></p>
+             <p><label for="tCidade">Cidade:</label><input type="text" name="cCidade" id="tCidade" size="20" max="20" placeholder="Cidade"></p>
             </fieldset>
 
             <fieldset id="menssagem"> <legend>Menssagem do Usuário</legend>
