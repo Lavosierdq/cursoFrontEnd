@@ -93,7 +93,7 @@
             </p>
 
             <p><label for="tEstado">Estado:</label>
-              <select name="tEstado" id="cEstado">
+              <select name="ctEstado" id="tEstado">
                 <optgroup label="sudeste">
                   <option value="RJ">Rio de Janeiro</option>
                   <option value="SP">Sao Paulo</option>
@@ -109,7 +109,8 @@
             </p>
 
             <p><label for="tCidade">Cidade:</label>
-              <input type="text" name="tCid" id="cCid" size="20" maxlength="20" placeholder="Sua Cidade" list="cidade">
+              <input type="text" name="tCid" id="tCidade" size="20" maxlength="20" placeholder="Sua Cidade"
+                list="cidade">
               <datalist id="cidade">
                 <option value="Rio de Janeiro"></option>
                 <option value="Nova Iguaçu"></option>
@@ -122,8 +123,12 @@
 
           <fieldset id="menssagem">
             <legend>Menssagem do Usuário</legend>
-            Gráu de Urgência:
-            Menssagem
+            <p> <label for="cUrgencia">Gráu de Urgência:</label>
+              Min<input type="range" name="tUrgencia" id="cUrgencia" min='0' max="10" step="2"> Max
+            </p>
+            <p><label for="cMenssagem">Menssagem:</label>
+              <textarea name="tMsg" id="dMsg" cols="30" rows="5" placeholder="Deixe aqui sua menssagem"></textarea>
+            </p>
           </fieldset>
 
           <fieldset id="pedido">
